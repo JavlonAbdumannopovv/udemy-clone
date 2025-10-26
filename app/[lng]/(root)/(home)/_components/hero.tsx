@@ -5,8 +5,6 @@ import {
 	Carousel,
 	CarouselContent,
 	CarouselItem,
-	CarouselNext,
-	CarouselPrevious,
 } from '@/components/ui/carousel'
 import { companies } from '@/constants'
 import useTranslate from '@/hooks/use-translate'

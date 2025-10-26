@@ -1,17 +1,18 @@
-'use client'
-
-import { useTranslation } from '@/i18n/client'
-import { useParams } from 'next/navigation'
+import Categories from './_components/categories'
+import FeaturedCourses from './_components/featured-courses'
 import Hero from './_components/hero'
+import Instructor from './_components/instructor'
+import LearningJourney from './_components/learning-journey'
 
 function Page() {
-	const { lng } = useParams()
-	const { t } = useTranslation(lng as string)
-
 	return (
-		<div className='mt-24'>
+		<>
 			<Hero />
-		</div>
+			<FeaturedCourses />
+			<Categories />
+			<Instructor />
+			<LearningJourney />
+		</>
 	)
 }
 
