@@ -38,7 +38,7 @@ function RootLayout({ children, params: { lng } }: Props) {
 	const local = localization(lng)
 
 	return (
-		<ClerkProvider>
+		<ClerkProvider localization={local}>
 			<html lang={lng} dir={dir(lng)} suppressHydrationWarning>
 				<body
 					className={`${roboto.variable} ${spaceGrotesk.variable} overflow-x-hidden`}
